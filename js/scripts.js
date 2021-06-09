@@ -51,7 +51,7 @@
     });
 
     // Create timeline
-    $('#Publication-timeline').each(function() {
+    $('#publication-timeline').each(function() {
 
         $this = $(this); // Store reference to this
         $userContent = $this.children('div'); // user content
