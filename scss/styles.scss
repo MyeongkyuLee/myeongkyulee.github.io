@@ -778,7 +778,7 @@ footer {
 #projects {
     padding: 50px 15px;
     border-bottom: 1px solid $border;
-    text-align: left;
+    text-align: center;
 
     h2 {
         color: $heading;
@@ -788,6 +788,7 @@ footer {
 
 .project {
     position: relative;
+    text-align: center;
     max-width: 900px;
     margin: 0 auto 30px auto;
     overflow: hidden;
@@ -805,6 +806,7 @@ footer {
     transform: translateY(-50%);
     margin-left: 300px;
     padding: 15px;
+    text-align: center;
 
     h3 {
         font-size: 1.5em;
