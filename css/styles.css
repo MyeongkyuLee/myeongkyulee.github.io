@@ -490,6 +490,47 @@ footer {
 .conference-block ul {
     padding: 0 0 0 15px 
 }
+#award {
+    padding: 50px 15px 20px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    text-align: center 
+}
+#award h2 {
+    color: #000000
+    font-weight: 400;
+    margin-bottom: 50px 
+}
+.award-block {
+    max-width: 700px;
+    margin: 0 auto 15px auto;
+    padding: 8px;
+    border: 1px solid #dcd9d9;
+    text-align: left 
+}
+.award-block h3 {
+    font-weight: 500;
+    float: left;
+    margin: 0;
+    color: #000000 
+}
+.award-block span {
+    color: #000000;
+    float: right 
+}
+.award-block h4 {
+    color: #000000;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 15px 0 
+}
+.award-block p,.award-block ul {
+    margin: 0;
+    color: #74808a;
+    font-size: 0.9em 
+}
+.award-block ul {
+    padding: 0 0 0 15px 
+}
 
 #projects {
     padding: 50px 15px;
@@ -745,6 +786,9 @@ footer {
         float: none 
     }
     .conference-block h3,.conference-block span {
+        float: none 
+    }
+    .award-block h3,.award-block span {
         float: none 
     }
     .project-image {
