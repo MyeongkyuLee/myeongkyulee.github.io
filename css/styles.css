@@ -306,7 +306,8 @@ footer {
     border-bottom: 1px solid #dcd9d9 
 }
 #about h2 {
-    color: #374054 
+    color: #000000 
+    font-weight: 400;
 }
 #about p {
     color: #74808a;
@@ -318,7 +319,8 @@ footer {
     border-bottom: 1px solid #dcd9d9 
 }
 #experience h2 {
-    color: #374054 
+    color: #000000
+    font-weight: 400;
 }
 #experience-timeline {
     margin: 30px auto 0 auto;
@@ -411,7 +413,8 @@ footer {
     text-align: center 
 }
 #education h2 {
-    color: #374054;
+    color: #000000
+    font-weight: 400;
     margin-bottom: 50px 
 }
 .education-block {
@@ -452,7 +455,8 @@ footer {
     text-align: center 
 }
 #conference h2 {
-    color: #374054;
+    color: #000000
+    font-weight: 400;
     margin-bottom: 50px 
 }
 .conference-block {
@@ -493,7 +497,8 @@ footer {
     text-align: center 
 }
 #projects h2 {
-    color: #374054;
+    color: #000000
+    font-weight: 400;
     margin-bottom: 50px 
 }
 .project {
@@ -539,7 +544,8 @@ footer {
     text-align: center 
 }
 #skills h2 {
-    color: #374054;
+    color: #000000
+    font-weight: 400;
     margin-bottom: 50px 
 }
 #skills ul {
