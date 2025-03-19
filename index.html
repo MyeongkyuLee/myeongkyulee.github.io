@@ -1,276 +1,610 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
-
-<body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Myeongkyu's Website</title>
+      <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+      <link rel="icon" href="favicon2.ico" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+      <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   </head>
+   <body>
+      <div id="mobile-menu-open" class="shadow-large">
+         <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <!-- End #mobile-menu-toggle -->
+      <header>
+         <div id="mobile-menu-close">
             <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
+         </div>
+         <ul id="menu" class="shadow">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#publication">Publication</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#conferences">Conferences</a></li>
+            <li><a href="#award">Award&Scholarship</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#misc">Misc.</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </header>
+      <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Ryan Fitzgerald</h1>
-            <h2>Software Engineer</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
+      <div id="lead">
+         <div id="lead-content">
+            <h1>Myeongkyu Lee</h1>
+            <h2>Human-Vehicle Interaction Engineer</h2>
+            <a href="docu/Myeongkyu_Lee_CV.pdf" class="btn-rounded-white">Show CV (ver. 2025.03)</a>
+            <a href="docu/transcript_myeongkyulee_eng.pdf" class="btn-rounded-white">Show Transcript</a>
+         </div>
+         <!-- End #lead-content -->
+         <div id="lead-overlay"></div>
+         <div id="lead-down">
             <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
             </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
+         </div>
+         <!-- End #lead-down -->
+      </div>
+      <!-- End #lead -->
+      <div id="about" class="background-alt">
+         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
-                    </p>
-                </div>
+               <div class="col-md-4">
+                  <h2 class="heading">About Me</h2>
+               </div>
+               <div class="col-md-8">
+                  <p>
+                  <h3> Introduction </h3>
+                  Welcome to my website!
+                  <br> My name is Myeongkyu Lee and I am a second-year PhD student in the School of Industrial Engineering at Purdue University. 
+                  <br> If you have any questions about me, feel free to send me an email! (<a href="mailto:myeongkyu@purdue.edu">myeongkyu@purdue.edu</a>)
+                  <br> Please note that I am not updating this website.
+                  </p>
+                 <br>
+                  <p>
+                  <h3> Research Area </h3>
+                  - Human-Vehicle Interaction<br>
+                  - Driver Behavior/Trust/Emotion<br>
+                  - Vehicle/Driver Safety<br>
+                  </p>
+               </div>
             </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
+         </div>
+      </div>
+      <!-- End #about -->
+      <div id="education">
+         <h2 class="heading">Education</h2>
+         <div class="education-block">
+            <h3>Purdue University, United States</h3>
+            <span class="education-date">Aug. 2023 - present</span>
+            <h4>PhD student in the Department of Industrial Engineering</h4>
             <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
+               <li>Research Assistant</li>
+               <li>Advisor: Dr. Brandon Pitts <a href="https://engineering.purdue.edu/NHanCE">(NHanCE Laboratory)</a></li>
             </ul>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
+         </div>
+         <div class="education-block">
+            <h3>Kookmin University, South Korea</h3>
+            <span class="education-date">Mar. 2021 - Feb. 2023</span>
+            <h4>Master Candidate of Automotive and IT convergence
+               <br>Cumulative Rank: 1st
+               </h4>
+            <ul>
+               <li>SUNGKOK Scholarship (Merit based, Full tuition for all two years, recommended by advisor)</li>
+               <li>GPA: [4.0/4.0]</li>
+               <li>Advisor: Ji Hyun Yang <a href="http://huva.kookmin.ac.kr">(Human Vehicle Automation Laboratory)</a></li>
+            </ul>
+         </div>
+         <div class="education-block">
+            <h3>Kookmin University, South Korea</h3>
+            <span class="education-date">Mar. 2015 - Feb. 2021</span>
+            <h4>Bachelor of Automotive Engineering
+               <br>Cumulative Rank: 1st
+            </h4>
+            <ul>
+               <li>Graduated first in College (Rank: 1/166), [3.98/4.0, 4.41/4.5]</li>
+               <li>Graduation Scholarship (Graduated first)</li>
+               <li>Academic Excellence Scholarship for all four years</li>
+            </ul>
+         </div>
+      </div>
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
+      <!-- End #education -->
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
+      <div id="publication" class="background-alt">
+         <div class="optional-section">
+            <h2 class="heading">Publication & Presentation</h2>
+            
+            <h2> [Under Review & In Preparation] </h2>
+            
+            <div align="left">
+               <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>1. Analysis of Drivers’ Reactions to Simulated Jaywalking and Application of AI classifiers to Predict Accidents </b> 
+               </div>
+               <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                    International Journal of Automotive Technology (under review from June 2022) <br>
+                    <b>Myeongkyu Lee</b>, Jihoon Choi, Songhui Kim, Ji Hyun Yang* </div> <br>
+
+            <div align="center"><hr width = "60%" align"center"/>
+            
+            <h2> [Journals] </h2></div>
+            <div align="left">
+                 <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>1. Effect of Emotion on Galvanic Skin Response and Vehicle Control Data during Simulated Driving </b> <a href="https://www.sciencedirect.com/science/article/pii/S1369847823000037">[link]</a>
                 </div>
-                <!-- End .project -->
+                <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                    Transportation Research Part F: Traffic Psychology and Behaviour <br> 
+                    <b>Myeongkyu Lee</b>, Sangho Lee, Seongwook Hwang, Sejoon Lim, Ji Hyun Yang* </div> <br>
+               
+               <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>2. Simulator Study on the Response Time and Defensive Behavior of Drivers in a Cut-in Situation </b> <a href="https://link.springer.com/article/10.1007/s12239-022-0073-3">[link]</a>
+               </div>
+               <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                International Journal of Automotive Technology <br>
+                <b>Myeongkyu Lee</b>, Songhui Kim, Jonghyuk Kim, Ji Hyun Yang* </div> <br>
+
             </div>
+            
+            <div align="center"><hr width = "60%" align"center"/>
+            <h2> [Proceedings] </h2></div>
+               
+            <div align="left">
+                <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>1. “Play Your Anger”: A report on the empathic in-vehicle interface workshop</b> 
+                </div>
+                <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                    Automotive UI’23, Ingolstadt, Germany, September 18-21, 2023.<br>
+                    Jiayuan Dong, Chihab Nadri, Ignacio Alvarez, Cyriel Diels, <b>Myeongkyu Lee</b>, ..., Myounghoon Jeon*</div> <br>
+               
+               <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>2. A Study to Acquire the Driving Characteristic Data According to Driver Emotions and to Propose Emotion Groups in the Driving Context</b> 
+                </div>
+                <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                    3rd IEEE International Conference on Human-Machine Systems, Florida, US, November 17-19, 2022.<br>
+                    <b>Myeongkyu Lee</b>, Sangho Lee, Seongwook Hwang, Sejoon Lim, Ji Hyun Yang* </div> <br>
+
+                <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>3. A Study for STPA-based Identification of Safety Requirements from the Perspective of Drivers in Take-Over Request Situation</b> 
+                </div>
+                <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                    3rd IEEE International Conference on Human-Machine Systems, Florida, US, November 17-19, 2022. <br>
+                    Jongwoo Park, <b>Myeongkyu Lee</b>, Jooyoung Maeng, Changnam Ahn, Ji Hyun Yang* </div> <br>
+             </div>
+                <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>4. Simulator Study on the Response Time and Defensive Behavior of Drivers in Dangerous Conditions at the Intersection </b> 
+               </div>
+               <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                Automotive UI’22, Seoul, S. Korea, September 17-20, 2022. <br>
+                <b>Myeongkyu Lee</b>, Sehan Kim, Daehyun Jung, Hyojun Lee, Jihun Choi, Hyunseo Han, Ji Hyun Yang* </div> <br>
+
+                <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>5. Establishment of a Data Collection System for Developing a Deep Learning Model Detecting Driver's Hands On/Off </b> 
+               </div>
+               <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                Proceedings of 2022 Spring Conference of KSAE <br>
+                Hyeongoo Pyeon, Hanwul Kim, Youngjoon Bae, <b>Myeongkyu Lee</b>, Haozheng Zuo, Ji Hyun Yang, Sejoon Lim* </div> <br>
+
+                <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>6. Study of Driver’s Response Time in Cut-in Situation with Driving Simulator  </b> <a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE10589837">[link]</a> 
+               </div>
+               <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                Proceedings of 2021 Spring Conference of ESK <br>
+                  <b>Myeongkyu Lee</b>, Hoyoung shim, Songhui Kim, Jihoon Choi, Ji Hyun Yang* </div> <br>
+            </div>
+            
+            
+            <div align="center"><hr width = "60%" align"center"/>
+            <h2> [Patents] </h2></div>
+            <div align="left">
+                <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>1. Method for Controlling Steering Wheel Based on Whether a Driver Grips Steering Wheel or Not  </b> 
+               </div>
+               <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                Korean Patent (10-2022-0073471) <br>
+                <b>Myeongkyu Lee (40%)</b>, Ji Hyun Yang*, Sejoon Lim, Haozheng Zuo, Hyeongoo Pyeon, Youngjoon Bae </div> <br>
+
+                <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>2. Method for Providing a Plurality of Driving Modes Based on Whether a Driver Grips Steering Wheel or Not  </b> 
+               </div>
+               <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                Korean Patent (10-2022-0086240) <br>
+                <b>Myeongkyu Lee (40%)</b>, Ji Hyun Yang*, Sejoon Lim, Haozheng Zuo, Hyeongoo Pyeon, Youngjoon Bae </div> <br>
+
+                <div style = "font-size:17px; margin-left:22%; margin-right:22%">
+                    <b>3. Device and Method for Detecting Driver’s Steering Wheel Grip </b> 
+               </div>
+               <div style = "font-size:16px; margin-left:24%; margin-right:24%">
+                Korean Patent (10-2022-0073471) <br>
+                Jongwoo Park, Ji Hyun Yang*, <b> Myeongkyu Lee (25%)</b>,  Jooyoung Maneg </div> <br>
+            </div>
+         </div>
+        </div>
         </div>
     </div>
-    <!-- End #projects -->
+      <!-- End .publication-section -->
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
-        </ul>
-    </div>
-    <!-- End #skills -->
+      <div id="projects">
+         <h2 class="heading">Projects</h2>
+         <div class="container">
+            <div class="row">
+               <div class="project shadow-large">
+                  <div class="project-image"><img src="images/project_steeringAI.jpg" style="width:300px;height:160px;" /></div>
+                  <div class="project-info">
+                     <h3> Artificial Intelligence Adaptation on the Steering Wheel System </h3>
+                     <p> Period: September, 2021 - August, 2022<br>
+                        Sponsor: Hyundai Mobis <br><br>
+                        <a href="#research_detail_7" class="btn_open">detail</a>
+                     </p>
+                  </div>
+               </div>
 
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
+               <div class="project shadow-large">
+                  <div class="project-image"><img src="images/project_takeoverprocess.jpg" style="width:300px;height:160px;" /></div>
+                  <div class="project-info">
+                     <h3> Study on the Driver’s Mental Model and Behavior in Take-over Situation </h3>
+                     <p> Period: May, 2021 - May, 2022<br>
+                        Sponsor: Hyundai Motor Company <br><br>
+                        <a href="#research_detail_6" class="btn_open">detail</a>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="project shadow-large">
+                  <div class="project-image"><img src="images/project_emotion.jpg" style="width:300px;height:160px;" /></div>
+                  <div class="project-info">
+                     <h3> Study on the Vehicle Control Data/Physiological Data According to the Emotions </h3>
+                     <p>period: March, 2020 - Novebmer, 2021<br>
+                        Sponsor: Hyundai Motor Company <br><br>
+                        <a href="#research_detail_5" class="btn_open">detail</a>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="project shadow-large">
+                  <div class="project-image"><img src="images/nfs_cutin.jpg" style="width:300px;height:160px;" /></div>
+                  <div class="project-info">
+                     <h3>Study on the Driver Behavior Characteristics in Four Dangerous Situations </h3>
+                     <p> Period: March, 2020 - Novembmer, 2020 <br>
+                        Sponsor: National Forensic Service, Repubic of Korea <br><br>
+                        <a href="#research_detail_4" class="btn_open">detail</a>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="project shadow-large">
+                  <div class="project-image"><img src="images/2020drone.png" style="width:300px;height:160px;" /></div>
+                  <div class="project-info">
+                     <h3>Undetectable Communications for Drone Applications (Exchange Researcher) </h3>
+                     <p>
+                        Period: December, 2019 - February, 2020<br>
+                        Sponsor: University of California, Irvine, US <br><br>
+                        <a href="#research_detail_3" class="btn_open">detail</a>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="project shadow-large">
+                  <div class="project-image"><img src="images/2019russia.jpg" style="width:300px;height:160px;" /></div>
+                     <div class="project-info">
+                        <h3>Designing and Optimizing My City's Traffic Condition (Exchange Researcher) </h3>
+                        <p>
+                           Period: June, 2018 - July, 2018<br>
+                           Sponsor: Kazan University, Russia <br><br>
+                           <a href="#research_detail_2" class="btn_open">detail</a>
+                        </p>
+                  </div>
+               </div>
+               <div class="project shadow-large">
+                  <div class="project-image"><img src="images/rccar.jpg" style="width:300px;height:160px;" /></div>
+                  <div class="project-info">
+                     <h3>Making Rubber Powered Car using RC Car & Rubber Powered Car Competition </h3>
+                        <p>
+                            Period: 2015, 2nd semester<br>
+                            Sponsor: Kookmin University, Korea <br><br>
+                            <a href="#research_detail_1" class="btn_open">detail</a>
+                        </p>
+                  </div>
+               </div>
+            </div>
+            <!-- End .project -->
+         </div>
+      </div>
+      </div>    
+      <!-- End #projects -->
+
+      <div id="research_detail_7" class="pop_wrap" style="display:none;">
+         <div class="pop_inner">
+            <p class="dsc">
+                <ul>
+                    <li> Build environment for acquiring steering-related vehicle data according to hands on/off state.  </li>
+                    <li> Acquire hands on/off state data with steering-related vehicle data on the real road.</li>
+                    <li> Predict hands on/off state according to steering-related vehicle data using AI.</li>
+                    <li> Performance: 2 patents, 1 proceeding </li>
+                </ul>
+            </p>
+            <button type="button" class="btn_close">close</button></a>
+         </div>
+      </div>
+
+      <div id="research_detail_6" class="pop_wrap" style="display:none;">
+         <div class="pop_inner">
+            <p class="dsc">
+               Examined drivers’ mental model (information process) and behavior in take-over situation. <br>
+               Implemented dangerous take-over situation using driving simulator and recruited 40 participants. <br>
+               Acquired driving control data/survey data according to four NDRT types. <br>
+               Analyzed data in terms of what kinds of action people take, the reason for the action. <br>
+               Performance: Thesis “T.B.D.”, 1 patent, 1 proceeding.
+            </p>
+            <button type="button" class="btn_close">close</button></a>
+         </div>
+      </div>
+
+      <div id="research_detail_5" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+           <p class="dsc">
+              Examined drivers’ mental model (information process) and behavior in take-over situation. <br>
+              Implemented dangerous take-over situation using driving simulator and recruited 40 participants. <br>
+              Acquired driving control data/survey data according to four NDRT types. <br>
+              Analyzed data in terms of what kinds of action people take, the reason for the action. <br>
+              Performance: Thesis “T.B.D.”, 1 patent, 1 proceeding.
+           </p>
+           <button type="button" class="btn_close">close</button></a>
+        </div>
+     </div>
+
+     <div id="research_detail_4" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+           <p class="dsc">
+            	Examined drivers’ behavior characteristics in four dangerous situations.<br>
+            	Implemented four dangerous situations reported frequently at National Forensic Service and recruited 186 participants.<br>
+            	Acquired perception/reaction time, driving control data according to demographic characteristics (age/gender).<br>
+                Analyzed data using descriptive/inferential statistics and Machine Learning.<br>
+            	Suggested data trend according to demographic characteristics and method to improve road safety.<br>
+            	Performance: 2 publications, 2 proceedings.
+            
+           </p>
+           <button type="button" class="btn_close">close</button></a>
+        </div>
+     </div>
+
+     <div id="research_detail_3" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+           <p class="dsc">
+                Conducted when I was in UC Irvine, US as an exchange researcher in 2019 <br>
+                PI: Dr. Marco Leverato/ Mentor: Anas Alsoliman (Ph.D candidate) <br>
+                Role: making cryptic code for interaction between drone and controller
+           </p>
+           <button type="button" class="btn_close">close</button></a>
+        </div>
+     </div>
+
+     <div id="research_detail_2" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+           <p class="dsc">
+                Conducted when I was in Kazan, Russia as an exchange student in summer, 2018 <br> 
+                Objective: To optimize my city traffic using city optimizer tool <br>
+                Role: Researched traffic conditions of my city and Designed it for optimization  <br>
+           </p>
+           <button type="button" class="btn_close">close</button></a>
+        </div>
+     </div>
+
+     <div id="research_detail_1" class="pop_wrap" style="display:none;">
+        <div class="pop_inner">
+           <p class="dsc">
+                Conducted when I was a freshman in class <br>
+                Objective: Making from car powered by electicity to car powered by rubber<br>
+                Performance: Won the first prize <br>
+           </p>
+           <button type="button" class="btn_close">close</button></a>
+        </div>
+     </div>
+
+
+      <div id="conferences" class="background-alt">
+         <div class="optional-section">
+            <h2 class="heading">Conferences (including participation)</h2>
+            <div class="conference-block">
+               <h3>ICEIC 2022 (Int. Conference on Electronics, Information, and Communication) </h3>
+               <span class="education-date">Feb. 7th - Feb. 8th 2022</span>
+               <h4>
+               Jeju, Korea  <span style="text-align: end; display: inline;">        
+                <a data-fancybox="gallery" href="https://pbs.twimg.com/media/FNOLtc_VQAAVZ-Y?format=png&name=small"><i class="far fa-image"></i></a>
+            </div>
+            <div class="conference-block">
+               <h3>ESK 2021 Annual Fall Conference</h3>
+               <span class="education-date">Nov. 29th - Nov. 30th 2021</span>
+               <h4>
+               Jeju Island, Korea <span style="text-align: end; display: inline;">        <a data-fancybox="gallery" href="https://pbs.twimg.com/media/FFhCopsUcAgbZaR?format=jpg&name=small"><i class="far fa-image"></i></a>
+            </div>
+            <div class="conference-block">
+               <h3>KSAE 2021 Annual Fall Conference</h3>
+               <span class="education-date">Nov. 17th - Nov. 19th 2021</span>	
+               <h4>Virtual Conference </h4>
+            </div>
+            <div class="conference-block">
+               <h3>ESK 2021 Annual Spring Conference (made presentation)</h3>
+               <span class="education-date">June. 22nd 2021</span>
+               <h4>
+               Seoul, Korea  <span style="text-align: end; display: inline;">        <a data-fancybox="gallery" href="https://pbs.twimg.com/media/E4e5DpCVEAItSe7?format=jpg&name=small"><i class="far fa-image"></i></a>
+            </div>
+            <div class="conference-block">
+               <h3>KSAE 2020 Annual Fall Conference</h3>
+               <span class="education-date">Nov. 18th - Nov,20th 2020</span>
+               <h4>Jeju Island, Korea <span style="text-align: end; display: inline;">        <a data-fancybox="gallery" href="https://pbs.twimg.com/media/EwSCDuWVcAQDE1E?format=jpg&name=small"><i class="far fa-image"></i></a>
+               </h4>
+            </div>
+            <div class="conference-block">
+               <h3>ESK 2020 Annual Fall Conference</h3>
+               <span class="education-date">Oct. 28th - Oct. 30th 2020</span>
+               <h4>
+               Jeju Island, Korea  <span style="text-align: end; display: inline;">        <a data-fancybox="gallery" href="https://pbs.twimg.com/media/E3WXBFzVkBU-Kzf?format=jpg&name=small"><i class="far fa-image"></i></a>
+            </div>
+            <div class="conference-block">
+               <h3>Automotive UI 2020</h3>
+               <span class="education-date">Sep. 21st - Sep. 22nd 2020</span>
+               <h4>Virtual Conference  </h4>
+            </div>
+            <div class="conference-block">
+               <h3>KSAE 2020 Annual Spring Conference</h3>
+               <span class="education-date">Jul. 1st - Jul. 3rd 2020</span>
+               <h4>
+               Samcheok, Korea   <span style="text-align: end; display: inline;">        <a data-fancybox="gallery" href="https://pbs.twimg.com/media/E3WXBuXVIAIGl8Y?format=jpg&name=small"><i class="far fa-image"></i></a>
+            </div>
+         </div>
+      </div>
+      <!-- End .optional-section -->
+      <div id="award">
+         <div class="optional-section">
+            <h2 class="heading">Awards & Scholarships</h2>
+            <div class="award-block">
+               <h3>	Excellence Award (3rd), Competition of Creating Intellectual Property Rights Based on Paper</h3>
+               <span class="education-date">Jul. 27th, 2022</span>
+               <h4>
+               Seoul, Korea <span style="text-align: end; display: inline;">        <a data-fancybox="gallery" href="https://pbs.twimg.com/media/FY0sbMEUcAA2_ay?format=jpg&name=small"><i class="far fa-image"></i></a>
+            </div>
+            <div class="award-block">
+               <h3>Golden Award (2nd), BK21 Program Poster Contest</h3>
+               <span class="education-date">Feb. 23rd, 2022</span>
+               <h4>
+               Seoul, Korea <span style="text-align: end; display: inline;">        <a data-fancybox="gallery" href="https://pbs.twimg.com/media/FNON5vZVEAETOpg?format=jpg&name=small"><i class="far fa-image"></i></a>
+            </div>
+            <div class="award-block">
+               <h3>Graduation Award (Graduated 1st, Kookmin University)</h3>
+               <span class="education-date">Feb. 17th, 2021</span>
+               <h4>
+               Seoul, Korea <span style="text-align: end; display: inline;">        <a data-fancybox="gallery" href="https://pbs.twimg.com/media/FPpPBGKVUAI5G1J?format=jpg&name=small"><i class="far fa-image"></i></a>
+            </div>
+            <!-- End .optional-section-block -->
+         </div>
+      </div>
+      <!-- End .optional-section -->		    
+      <div id="skills"  class="background-alt">
+         <h2 class="heading">Skills</h2>
+         <ul>
+            <li>MATLAB</li><li>Simulink</li><li>Python</li><li>SPSS</li>
+            <li>R</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>C</li>
+            <li>C++</li><li>LaTex</li><li>CarMaker</li><li>Prescan</li>
+            <li>SCANeR Studio</li><li>Microsoft Office</li>
+         </ul>
+      </div>
+      <!-- End #skills -->
+      <div id="misc">
+         <div class="optional-section">
+            <div class="container">
+               <h2 class="heading">Miscellaneousness</h2>
+               <p>
+               <h3> Additional education </h3>
+               - 'Ergonomics', 2022, Kettering University (virtual, got A+)
+               <br> - 'MIT Sloan + CSAIL Machine Learning in Business Program', Oct - Dec 2021, MIT (virtual)
+               <br> - 'Drone Programming', Jul. 2021, Kookmin University (virtual)
+               <br> - 'Study Abroad' (ESL program), 2021, Kettering University (virtual)
+               </p>
+               <br>
+               <p>
+               <h3> Extra Activities </h3>
+               - Auto UI Committee member (Local Chair)<br>
+               - Manuscript Editing (helped for lab member)<br>
+               - Mentor/Tutor many times <br>
+               </p>
+            </div>
+         </div>
+      </div>
+      <!-- End .optional-section -->	
+      <div id="contact">
+         <h2>Get in Touch</h2>
+         <div id="contact-form">
+            <form method="POST" action="mailto:myeongkyu@purdue.edu">
+               <input type="hidden" name="_subject" value="Contact request from personal website" />
+               <input type="email" name="_replyto" placeholder="Your email" required>
+               <textarea name="message" placeholder="Your message (Also, you can send a message directly to 'myeongkyu@purdue.edu')" required></textarea>
+               <button type="submit"><a href="mailto:myeongkyu@purdue.edu"Email>Send</a></button>
             </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
+         </div>
+         <!-- End #contact-form -->
+      </div>
+      <!-- End #contact -->
+      <footer>
+         <div class="container">
             <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2017 YOUR NAME
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
+               <div class="col-sm-5 copyright">
+                  <p>
+                     Copyright &copy; template is forked from https://github.com/RyanFitzgerald/devportfolio and
+                     <br> edited on 11.12.2023 by Myeongkyu Lee
+                  </p>
+               </div>
+               <div class="col-sm-2 top">
+                  <span id="to-top">
+                  <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                  </span>
+               </div>
+               <div class="col-sm-5 social">
+                  <ul>
+                     <li>
+                        <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                     </li>
+                     <li>
+                        <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                     </li>
+                     <li>
+                        <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                     </li>
+                     <li>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                     </li>
+                     <li>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                     </li>
+                     <li>
+                        <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                     </li>
+                  </ul>
+               </div>
             </div>
-        </div>
-    </footer>
-    <!-- End footer -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-</body>
-
+         </div>
+      </footer>
+      <!-- End footer -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/scripts.min.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYJW0BDMF0"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'G-GYJW0BDMF0');
+         
+      </script>
+      <script>
+         var target = document.querySelectorAll('.btn_open');
+         var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
+         var targetID;
+         
+         // 팝업 열기
+         for(var i = 0; i < target.length; i++){
+           target[i].addEventListener('click', function(){
+             targetID = this.getAttribute('href');
+             document.querySelector(targetID).style.display = 'block';
+           });
+         }
+         
+         // 팝업 닫기
+         for(var j = 0; j < target.length; j++){
+           btnPopClose[j].addEventListener('click', function(){
+             this.parentNode.parentNode.style.display = 'none';
+           });
+         }
+      </script>
+   </body>
 </html>

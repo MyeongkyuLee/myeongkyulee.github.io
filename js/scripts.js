@@ -1,7 +1,7 @@
 /*!
     Title: Dev Portfolio Template
-    Version: 1.2.1
-    Last Change: 08/27/2017
+    Version: 1.2.2
+    Last Change: 03/25/2020
     Author: Ryan Fitzgerald
     Repo: https://github.com/RyanFitzgerald/devportfolio-template
     Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
@@ -51,6 +51,31 @@
     });
 
     // Create timeline
+    $('#publication-timeline').each(function() {
+
+        $this = $(this); // Store reference to this
+        $userContent = $this.children('div'); // user content
+
+        // Create each timeline block
+        $userContent.each(function() {
+            $(this).addClass('vtimeline-content').wrap('<div class="vtimeline-point"><div class="vtimeline-block"></div></div>');
+        });
+
+        // Add icons to each block
+        $this.find('.vtimeline-point').each(function() {
+            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
+        });
+
+        // Add dates to the timeline if exists
+        $this.find('.vtimeline-content').each(function() {
+            var date = $(this).data('date');
+            if (date) { // Prepend if exists
+                $(this).parent().prepend('<span class="vtimeline-date">'+date+'</span>');
+            }
+        });
+
+    });
+    // Create timeline
     $('#experience-timeline').each(function() {
 
         $this = $(this); // Store reference to this
@@ -75,7 +100,6 @@
         });
 
     });
-
     // Open mobile menu
     $('#mobile-menu-open').click(function() {
         $('header, body').addClass('active');
@@ -93,5 +117,24 @@
             $('#more-projects').fadeIn(300);
         });
     });
+    
+    var target = document.querySelectorAll('.btn_open');
+    var btnPopClose = document.querySelectorAll('.pop_wrap .btn_close');
+    var targetID;
+
+    // 팝업 열기
+    for(var i = 0; i < target.length; i++){
+      target[i].addEventListener('click', function(){
+        targetID = this.getAttribute('href');
+        document.querySelector(targetID).style.display = 'block';
+      });
+    }
+
+    // 팝업 닫기
+    for(var j = 0; j < target.length; j++){
+      btnPopClose[j].addEventListener('click', function(){
+        this.parentNode.parentNode.style.display = 'none';
+      });
+    }
 
 })(jQuery);
